@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="flex box-border h-screen">
+<body class="flex box-border h-screen bg-gray-900">
   <div class="container mx-2 my-auto rounded-none bg-white dark:bg-gray-800 md\:w-40 md:max-w-lg shadow md:m-auto">
     <div class="flex justify-center bg-indigo-900 py-4">
       <svg class="flex-shrink-0 h-10 w-10 text-white mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -59,8 +59,11 @@
           </svg></a>
         </div>  
       </div>
+     <div class="m-2">
+        <input type="text" name="text" placeholder="Add Task" class="p-2  border border-indigo-200 focus:outline-none focus:border-purple-200 rounded-none w-full" id="tdl-add-task">
+      </div>
     <div class=" sm:flex sm:justify-center ">
-      <div class="rounded-md shadow sm:w-full md:w-6/12">
+      <div id="tdl-add-btn" class="rounded-md shadow sm:w-full md:w-6/12">
         <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-none text-white bg-indigo-600 hover:bg-indigo-700 md:px-10">
         <svg class="flex-shrink-0 h-6 w-6 text-white mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -78,5 +81,6 @@
       </div>
     </div>
   </div>
+  <script src="app.js"></script>
 </body>
 </html>
