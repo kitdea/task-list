@@ -8,7 +8,9 @@ document.querySelector('#tdl-add-btn').addEventListener('click', addTask);
 taskList.addEventListener('click', removeTask);
 clearTask.addEventListener('click', clearAll);
 
+
 function addTask() {
+  
   if (taskInput.value === '') {
   }
   if (taskInput.value == '') {
@@ -28,16 +30,17 @@ function addTask() {
 function removeTask(e) {
     if (e.target.parentElement.classList.contains('delete-icon')) {
         e.target.parentElement.parentElement.remove();
+        if (confirm("Are you sure?")) {
+            txt = "You pressed OK!";
+            } else {
+            txt = "You pressed Cancel!";
+}
     } 
     console.log(e.target);
 }
 
 function clearAll() {
    taskList.innerHTML = ''; 
-//    while (taskList.firstChild) {
-//        taskList.removeChild(taskList.removeChild);
-//    } 
-   console.log(clearAll);
 }
   
 
